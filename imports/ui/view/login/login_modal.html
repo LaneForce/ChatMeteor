@@ -1,0 +1,23 @@
+<template name="LoginModal">
+  <h4 class="modal-title">Sign In</h4>
+  <form class="login-form">
+    
+    <div class="input-block">
+      <label>Email</label>
+      <input type="email" name="email" required>
+    </div>
+    <div class="input-block">
+      <label>Password</label>
+      <input type="password" name="password" required>
+    </div>
+    
+    <div class="input-block">
+      <button type="submit">Sign In</button>
+      <a href="{{ pathFor 'signUp' }}">
+        <button type="submit">
+          Sign Up
+        </button>
+      </a>
+    </div>
+  </form>
+</template>

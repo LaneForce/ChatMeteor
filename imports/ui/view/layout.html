@@ -1,0 +1,7 @@
+<template name="ApplicationLayout">
+  {{> notifications}}
+  {{#if currentUser}}
+    <a href="#" class="btn-logout">Log out</a>
+  {{/if}}
+  {{> Template.dynamic template=content}}
+</template>

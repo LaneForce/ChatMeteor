@@ -1,0 +1,45 @@
+<template name="RegistrationModal">
+  <div class="row">
+    <h4 class="modal-title">Create an Account</h4>
+  </div>
+  <form class="login-form">
+      <div class="input-block">
+        <label>Email</label>
+        <input type="email" name="email" class="form-control" required>
+      </div>
+      <div class="input-block">
+        <label>Username</label>
+        <input type="text" name="username" class="form-control" required minlength="4">
+      </div>
+      <div class="input-block">
+        <label>Password</label>
+        <input type="password" name="password" class="form-control" required minlength="6">
+      </div>
+      <div class="input-block">
+        <label>Цвет обводки</label>
+        <select size="3" multiple name="border">
+          <option value="1">Жёлтый</option>
+          <option selected value="2">Синий</option>
+          <option value="3">Зелёный</option>
+        </select>
+        
+      </div>
+      <div class="input-block">
+        <label>Аватар</label>
+        <select size="3" multiple name="avatar">
+          <option value="avatar1.png">Invoker</option>
+          <option selected value="avatar2.png">Ember Spirit</option>
+          <option value="avatar3.png">IO</option>
+        </select>
+        
+      </div>
+      <div class="input-block">
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <a href="{{ pathFor 'signIn' }}">
+          <button type="submit" class="btn btn-primary">
+            Sign In
+          </button>
+        </a>
+      </div>
+  </form>
+</template>
